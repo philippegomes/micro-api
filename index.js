@@ -11,7 +11,7 @@ const server = Hapi.server(serverConfigs);
 const init = async () => {
     await server.register(serverPlugins);
     await server.start();
-    console.log(`Server running at: ${server.info.uri}`);
+    console.log(`Server runninng at: ${server.info.uri}`);
 };
 
 process.on('unhandledRejection', (err) => {
